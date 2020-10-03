@@ -3,10 +3,10 @@ import BookResultTable from '../BookResultTable/BookResultTable'
 import './styles.css'
 
 
-function SearchResults(){
+function SearchResults({data}){
     return(
         <div className="SearchResults">
-            <BookResultTable />
+            <BookResultTable data={data} />
         </div>
     )
 }

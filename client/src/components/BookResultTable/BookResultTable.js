@@ -1,15 +1,13 @@
 import React from 'react'
-import BookResultRow from '../BookResultRow/BookResultRow'
+import './styles.css'
+// import BookResultRow from '../BookResultRow/BookResultRow'
 
-function BookResultTable() {
+function BookResultTable({data}) {
+    console.log("data in resultTable is: ", data)
     return (
         <table className="container-fluid">
             <tbody>
-                {/* <tr className="table-headings">
-                    <th>Book Search Results</th>
-                    <th>Description</th>
-                </tr> */}
-                    <BookResultRow />
+                {data}
             </tbody>
         </table>
     )
