@@ -26,7 +26,7 @@ function Search(){
     async function saveBook(event){
         const book = books[event.target.id];
 
-        const apiRes = await API.saveBook({
+        await API.saveBook({
             title: book.volumeInfo.title, 
             authors: book.volumeInfo.authors,
             image:book.volumeInfo.imageLinks.thumbnail, 
@@ -34,7 +34,6 @@ function Search(){
             link:book.volumeInfo.canonicalVolumeLink
         })
 
-        console.log("API Res from saveBook is: ", apiRes.data)
     }
 
     return(
