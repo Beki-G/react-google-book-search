@@ -1,0 +1,7 @@
+.imgColumn{
+    width: 25%;
+    justify-content: right;
+}
+img {
+    object-fit: contain;
+}
