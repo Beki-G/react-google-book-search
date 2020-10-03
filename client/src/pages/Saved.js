@@ -31,13 +31,13 @@ function Saved(){
             <SearchHeader />
             <SearchResults data={books.map((book, index)=>{
                 return (
-                    <tr key={index}>
+                    <tr key={index} className="mb-3">
                         <td className="imgColumn">
                             <div>
                                 <strong>Title: </strong>{book.title}<br />
                                 <strong>Authors: </strong>{book.authors.join(", ")}
                             </div>
-                            <img alt={`Cover Art of ${book.title}`} src={book.image} />
+                            <img alt={`Cover Art of ${book.title}`} src={book.image||"https://via.placeholder.com/150/000000/FFFFFF/?text=Cover+Not+Available"} />
                         </td>
                         <td>
                             <strong>Description: </strong>{book.description}

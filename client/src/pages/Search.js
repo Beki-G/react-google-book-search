@@ -48,7 +48,7 @@ function Search(){
                     <td className="imgColumn">
                         <div>
                             <strong>Title: </strong>{book.volumeInfo.title}<br />
-                            <strong>Authors: </strong>{book.volumeInfo.authors.join(", ")}
+                            <strong>Authors: </strong>{book.volumeInfo.authors?.join(", ") || "Unknown"}
                         </div>
                         <img alt={`Cover Art of ${book.volumeInfo.title}`} src={book.volumeInfo.imageLinks?.thumbnail ||"https://via.placeholder.com/150/000000/FFFFFF/?text=Cover+Not+Available"} />
                     </td>

@@ -1,8 +1,9 @@
 import React from 'react';
+import './styles.css'
 
 function SearchBar({onClick, onChange}){
     return(
-        <div className="SearchBar">
+        <div className="SearchBar mb-5">
             
             <h3 className="mt-4">Book Search</h3>
 

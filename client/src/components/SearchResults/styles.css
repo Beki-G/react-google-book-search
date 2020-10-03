@@ -2,3 +2,10 @@
     width: 80%;
     margin: 0 auto;
 }
+table {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+  }
+.imgColumn{
+    text-align: center;
+}
