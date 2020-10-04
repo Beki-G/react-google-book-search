@@ -14,7 +14,7 @@ if(process.env.NODE_ENV === "production"){
 
 app.use(routes)
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/bookssearch",  { useNewUrlParser: true, useUnifiedTopology: true } );
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/bookssearch",  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false} );
 
 app.listen(PORT, ()=>{
     console.log(`App listening on PORT http://localhost:${PORT}`)
