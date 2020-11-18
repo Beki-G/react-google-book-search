@@ -15,14 +15,16 @@ React app that uses Google Books API to search and retrieve books from queries, 
 * [Built With](#Build%20With)
 * [Questions](#questions)
 
+### Deployment
+Check out the deployment: [Click Here](https://react-google-book-searchsave.herokuapp.com/)
+
+![GIF of app in use](./lib/imgs/deployment.gif)
+
 ## Installation
 If you would like to clone the rep use `npm i` to install dependencies 
 
 ## Usage
 Instead of trying to remember all the books you want to read just save them a single database.
-
-### Deployment
-Check out the deployment: ![GIF of app in use](./lib/imgs/deployment.gif)
 
 ## License
 MIT License - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
